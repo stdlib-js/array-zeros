@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-integer@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/array-ctors@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros@esm/index.mjs";var n=e.isPrimitive,i=r,s=t;var a=function(e){var r,t;if(!n(e))throw new TypeError("invalid argument. First argument must be a nonnegative integer. Value: `"+e+"`.");if("generic"===(r=arguments.length>1?arguments[1]:"float64"))return s(e);if(null===(t=i(r)))throw new TypeError("invalid argument. Second argument must be a recognized data type. Value: `"+r+"`.");return new t(e)};export{a as default};
+//# sourceMappingURL=index.mjs.map
