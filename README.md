@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-zeros
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zeros = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zeros = require( 'path/to/vendor/umd/array-zeros/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zeros;
-})();
-</script>
+var zeros = require( '@stdlib/array-zeros' );
 ```
 
 #### zeros( length\[, dtype] )
@@ -130,14 +122,9 @@ var arr = zeros( 2, 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var zeros = require( '@stdlib/array-zeros' );
 
 // Get a list of array data types:
 var dt = dtypes();
@@ -149,11 +136,6 @@ for ( i = 0; i < dt.length; i++ ) {
     arr = zeros( 4, dt[ i ] );
     console.log( arr );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -171,6 +153,17 @@ for ( i = 0; i < dt.length; i++ ) {
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-empty`][@stdlib/array/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-full`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-nans`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-ones`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-zeros-like`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/ndarray-zeros`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
 
 </section>
 
@@ -246,6 +239,22 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-zeros/main/LICENSE
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+<!-- <related-links> -->
+
+[@stdlib/array/empty]: https://github.com/stdlib-js/array-empty
+
+[@stdlib/array/full]: https://github.com/stdlib-js/array-full
+
+[@stdlib/array/nans]: https://github.com/stdlib-js/array-nans
+
+[@stdlib/array/ones]: https://github.com/stdlib-js/array-ones
+
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
+
+[@stdlib/ndarray/zeros]: https://github.com/stdlib-js/ndarray-zeros
+
+<!-- </related-links> -->
 
 </section>
 
