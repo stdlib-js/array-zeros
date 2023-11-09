@@ -154,6 +154,17 @@ for ( i = 0; i < dt.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-empty`][@stdlib/array/empty]</span><span class="delimiter">: </span><span class="description">create an uninitialized array having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-full`][@stdlib/array/full]</span><span class="delimiter">: </span><span class="description">create a filled array having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-nans`][@stdlib/array/nans]</span><span class="delimiter">: </span><span class="description">create an array filled with NaNs and having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-ones`][@stdlib/array/ones]</span><span class="delimiter">: </span><span class="description">create an array filled with ones and having a specified length.</span>
+-   <span class="package-name">[`@stdlib/array-zeros-like`][@stdlib/array/zeros-like]</span><span class="delimiter">: </span><span class="description">create a zero-filled array having the same length and data type as a provided array.</span>
+-   <span class="package-name">[`@stdlib/ndarray-zeros`][@stdlib/ndarray/zeros]</span><span class="delimiter">: </span><span class="description">create a zero-filled ndarray having a specified shape and data type.</span>
+
 </section>
 
 <!-- /.related -->
@@ -228,6 +239,22 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-zeros/main/LICENSE
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
+
+<!-- <related-links> -->
+
+[@stdlib/array/empty]: https://github.com/stdlib-js/array-empty
+
+[@stdlib/array/full]: https://github.com/stdlib-js/array-full
+
+[@stdlib/array/nans]: https://github.com/stdlib-js/array-nans
+
+[@stdlib/array/ones]: https://github.com/stdlib-js/array-ones
+
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
+
+[@stdlib/ndarray/zeros]: https://github.com/stdlib-js/ndarray-zeros
+
+<!-- </related-links> -->
 
 </section>
 
