@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@v0.2.2-deno/mod.js';
 ```
 
 #### zeros( length\[, dtype] )
@@ -108,7 +108,7 @@ var arr = zeros( 2, 'int32' );
 
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@deno/mod.js';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@deno/mod.js';
+import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@v0.2.2-deno/mod.js';
 
 // Get a list of array data types:
 var dt = dtypes();
