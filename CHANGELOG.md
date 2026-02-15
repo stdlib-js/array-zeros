@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-15)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`bb63f81`](https://github.com/stdlib-js/stdlib/commit/bb63f8127455cd4fc055aec5aa600f4e5b1eafb5) - **bench:** refactor to use string interpolation in `array/zeros` [(#10272)](https://github.com/stdlib-js/stdlib/pull/10272) _(by Aman Singh)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Aman Singh
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-08)
