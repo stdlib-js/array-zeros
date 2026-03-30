@@ -37,9 +37,12 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-assert-contains": "^0.2.3",
+    "@stdlib/array-base-join": "^0.1.2",
     "@stdlib/array-base-zeros": "^0.2.3",
     "@stdlib/array-ctors": "^0.3.1",
     "@stdlib/array-defaults": "^0.4.1",
+    "@stdlib/array-dtypes": "^0.4.1",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
@@ -48,7 +51,6 @@
   "devDependencies": {
     "@stdlib/array-complex128": "^0.3.2",
     "@stdlib/array-complex64": "^0.3.2",
-    "@stdlib/array-dtypes": "^0.4.1",
     "@stdlib/array-float32": "^0.2.3",
     "@stdlib/array-float64": "^0.2.3",
     "@stdlib/array-int16": "^0.2.3",

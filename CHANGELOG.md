@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-03-30)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`b85a1da`](https://github.com/stdlib-js/stdlib/commit/b85a1da40b6ea52d966f7294933908c5d4c839d9) - **refactor:** perform expliict dtype argument validation _(by Athan Reines)_
 -   [`bb63f81`](https://github.com/stdlib-js/stdlib/commit/bb63f8127455cd4fc055aec5aa600f4e5b1eafb5) - **bench:** refactor to use string interpolation in `array/zeros` [(#10272)](https://github.com/stdlib-js/stdlib/pull/10272) _(by Aman Singh)_
 
 </details>
@@ -24,9 +25,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Singh
+-   Athan Reines
 
 </section>
 
