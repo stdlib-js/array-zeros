@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-zeros
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zeros = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zeros = require( 'path/to/vendor/umd/array-zeros/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zeros;
-})();
-</script>
+var zeros = require( '@stdlib/array-zeros' );
 ```
 
 #### zeros( length\[, dtype] )
@@ -92,6 +86,7 @@ The function recognizes the following data types:
 
 -   `float64`: double-precision floating-point numbers (IEEE 754)
 -   `float32`: single-precision floating-point numbers (IEEE 754)
+-   `float16`: half-precision floating-point numbers (IEEE 754)
 -   `complex128`: double-precision complex floating-point numbers
 -   `complex64`: single-precision complex floating-point numbers
 -   `int32`: 32-bit two's complement signed integers
@@ -130,17 +125,12 @@ var arr = zeros( 2, 'int32' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var dtypes = require( '@stdlib/array-dtypes' );
+var zeros = require( '@stdlib/array-zeros' );
 
 // Get a list of array data types:
-var dt = dtypes();
+var dt = dtypes( 'numeric' );
 
 // Generate zero-filled arrays...
 var arr;
@@ -149,11 +139,6 @@ for ( i = 0; i < dt.length; i++ ) {
     arr = zeros( 4, dt[ i ] );
     console.log( arr );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -263,17 +248,17 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/empty]: https://github.com/stdlib-js/array-empty/tree/umd
+[@stdlib/array/empty]: https://github.com/stdlib-js/array-empty
 
-[@stdlib/array/full]: https://github.com/stdlib-js/array-full/tree/umd
+[@stdlib/array/full]: https://github.com/stdlib-js/array-full
 
-[@stdlib/array/nans]: https://github.com/stdlib-js/array-nans/tree/umd
+[@stdlib/array/nans]: https://github.com/stdlib-js/array-nans
 
-[@stdlib/array/ones]: https://github.com/stdlib-js/array-ones/tree/umd
+[@stdlib/array/ones]: https://github.com/stdlib-js/array-ones
 
-[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like/tree/umd
+[@stdlib/array/zeros-like]: https://github.com/stdlib-js/array-zeros-like
 
-[@stdlib/ndarray/zeros]: https://github.com/stdlib-js/ndarray-zeros/tree/umd
+[@stdlib/ndarray/zeros]: https://github.com/stdlib-js/ndarray-zeros
 
 <!-- </related-links> -->
 
